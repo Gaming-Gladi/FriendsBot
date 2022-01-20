@@ -5,16 +5,19 @@ plugins {
 group 'org.friends'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = JavaVersion.VERSION_17
+
 repositories {
     mavenCentral()
+    maven {
+        name 'duncte123-jfrog'
+        url 'https://duncte123.jfrog.io/artifactory/maven'
+    }
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-alpha.4'
-}
-
-test {
-    useJUnitPlatform()
+    implementation group: 'io.github.cdimascio', name: 'dotenv-java', version: '2.2.0'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.10'
+    implementation group: 'me.duncte123', name: 'botCommons', version: '2.3.9'
 }

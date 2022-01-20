@@ -16,5 +16,10 @@
       <option name="name" value="MavenRepo" />
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="duncte123-jfrog" />
+      <option name="name" value="duncte123-jfrog" />
+      <option name="url" value="https://duncte123.jfrog.io/artifactory/maven" />
+    </remote-repository>
   </component>
 </project>
